@@ -1,0 +1,41 @@
+<!-- contact-us.component.html -->
+<div class=" mt-4">
+    <div class="contact-us-container">
+        <h2 class="contact-us-heading">Contact Us</h2>
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input id="name" formControlName="name" class="form-control" />
+                <div *ngIf="contactForm.get('name')?.invalid && contactForm.get('name')?.touched">
+                    Name is required (min 3 characters).
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="number" class="form-label">Phone Number</label>
+                <input id="number" formControlName="number" class="form-control" />
+                <div *ngIf="contactForm.get('number')?.invalid && contactForm.get('number')?.touched">
+                    Phone number must be 10 digits.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input id="email" formControlName="email" class="form-control" />
+                <div *ngIf="contactForm.get('email')?.invalid && contactForm.get('email')?.touched">
+                    Please enter a valid email.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea id="message" formControlName="message" class="form-control"></textarea>
+                <div *ngIf="contactForm.get('message')?.invalid && contactForm.get('message')?.touched">
+                    Message is required (min 10 characters).
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

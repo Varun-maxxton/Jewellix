@@ -1,0 +1,77 @@
+.do-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .do-lined {
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+  }
+  
+  .do-lined::before,
+  .do-lined::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 2px;
+    background: #000;
+  }
+  
+  .do-lined::before {
+    left: -65px;
+  }
+  
+  .do-lined::after {
+    right: -65px;
+  }
+  
+  .mw-75 {
+    max-width: 75%;
+  }
+  
+  .jewelix-link {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .jewelix-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+  }
+  .pt-4, .py-4 {
+    padding-top: 1.5rem !important;
+}
+.row1 {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+* {
+    box-sizing: border-box;
+}
+.tn-w-100 {
+  width: 100%;
+}
+
+.tn-font-500 {
+  font-weight: 500;
+}
+
+.tn-text-24 {
+  font-size: 24px;
+}
+
+.tn-my-4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.abaya-libre {
+  font-family: 'Abhaya Libre', serif;
+}

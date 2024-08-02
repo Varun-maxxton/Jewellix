@@ -1,0 +1,47 @@
+.do-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .do-lined {
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+  }
+  
+  .do-lined::before,
+  .do-lined::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 2px;
+    background: #000;
+  }
+  
+  .do-lined::before {
+    left: -65px;
+  }
+  
+  .do-lined::after {
+    right: -65px;
+  }
+  .card {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.cardimg{
+    max-height: 600px;
+}
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .card-body {
+    background-color: #f8f9fa;
+}
+
+.card-body {
+    transition: background-color 0.3s;
+}

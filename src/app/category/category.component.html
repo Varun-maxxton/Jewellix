@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-lg-12 text-center">
+      <div class="do-heading do-lined">
+        <h1>
+          Shop By Category
+        </h1>
+      </div>
+    </div>
+    <div class="container my-4">
+      <div class="row">
+          <div class="col-md-3" *ngFor="let card of cards">
+              <div class="card h-100">
+                  <img src="{{ card.image }}" class="card-img-top d-block h-100"  alt="{{ card.title }}">
+                  <div class="card-body text-center">
+                      <h5 class="card-title">{{ card.title }}</h5>
+                      <p class="card-text">{{ card.text }}</p>
+                  </div>
+                  <div class="card-footer text-center">
+                      <a href="{{ card.link }}" class="btn btn-primary">View More</a>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+  </div>
+</div>

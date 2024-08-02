@@ -1,0 +1,52 @@
+.card {
+    border-radius: 10px;
+  }
+  
+  .card-title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #343a40;
+  }
+  
+  .card-text {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #495057;
+  }
+  
+  .table thead th {
+    background-color: #212529;
+    color: #ffffff;
+  }
+  
+  .table tbody td {
+    font-size: 1rem;
+    font-weight: 500;
+  }
+  
+  .card-header {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  
+  .card-footer {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .shadow-lg {
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.175) !important;
+  }
+  
+  .shadow-sm {
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+  }
+  

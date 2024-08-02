@@ -1,0 +1,43 @@
+<div class="container mt-4">
+    <div class="row justify-content-center">
+        <div class="col-md-10">
+            <div class="card shadow-lg">
+                <div class="card-header bg-primary text-white text-center">
+                    <h4>Current Gold & Silver Rates</h4>
+                </div>
+                <div class="card-body">
+                    <!-- Make the table responsive -->
+                    <div class="table-responsive">
+                        <table class="table table-hover table-bordered text-center">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Currency</th>
+                                    <th>Gold Price (XAU)</th>
+                                    <th>Silver Price (XAG)</th>
+                                    <th>Change (XAU)</th>
+                                    <th>Change (XAG)</th>
+                                    <th>% Change (XAU)</th>
+                                    <th>% Change (XAG)</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr *ngFor="let goldPriceData of itemData$">
+                                    <td>{{ goldPriceData.curr }}</td>
+                                    <td>{{ goldPriceData.xauPrice }}</td>
+                                    <td>{{ goldPriceData.xagPrice }}</td>
+                                    <td>{{ goldPriceData.chgXau }}</td>
+                                    <td>{{ goldPriceData.chgXag }}</td>
+                                    <td>{{ goldPriceData.pcXau }}</td>
+                                    <td>{{ goldPriceData.pcXag }}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="card-footer text-center">
+                    <small *ngFor="let goldPriceData of goldPriceData$">Last Updated: {{ goldPriceData.date }}</small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

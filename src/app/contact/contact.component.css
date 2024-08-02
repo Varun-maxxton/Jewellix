@@ -1,0 +1,25 @@
+.contact-us-container {
+    background-color: #f8f9fa; /* Light background color */
+    padding: 20px;
+    border: 2px solid #fdd72a; /* Blue border */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  }
+  
+  .contact-us-heading {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f8c330; /* Match border color */
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .text-danger {
+    font-size: 0.875rem;
+    margin-top: 0.25rem;
+  }
+  

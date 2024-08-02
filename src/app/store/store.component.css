@@ -1,0 +1,48 @@
+.lg\:pt-10{
+padding-top: 2.5em;
+}
+.lg\:pb-9{
+    padding-bottom: 2.5em;
+}
+.justify-center{
+    justify-content: center;
+}
+.flex{
+    display: flex;
+}
+.relative{
+    position: relative;
+}
+.do-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+  }
+  
+  .do-lined {
+    position: relative;
+    display: inline-block;
+    padding: 0 15px;
+  }
+  
+  .do-lined::before,
+  .do-lined::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 2px;
+    background: #c77c0b;
+  }
+  
+  .do-lined::before {
+    left: -65px;
+  }
+  
+  .do-lined::after {
+    right: -65px;
+  }
+  .text-center{
+    text-align: center;
+  }
+  

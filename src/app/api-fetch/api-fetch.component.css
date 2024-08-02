@@ -1,0 +1,17 @@
+.card {
+    border-radius: 15px;
+  }
+  
+  .table thead th {
+    background-color: #343a40;
+    color: #fff;
+  }
+  
+  .table tbody td {
+    font-weight: bold;
+  }
+  
+  .card-header h4 {
+    margin: 0;
+  }
+  

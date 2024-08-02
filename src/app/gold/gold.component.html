@@ -1,0 +1,16 @@
+<div class="lightbox-gallery rem-bg">
+    <div class="container">
+        <div class="intro">
+            <h2 class="text-center"> Gold Gallery</h2>
+            <p class="text-center">Find the gallery for your project. click on any image to open gallary</p>
+        </div>
+        <div class="row photos">
+            <div class="col-sm-6 col-md-4 col-lg-3 item d-flex justify-content-center" *ngFor='let img of imageGallaryList'>
+                <a [href]="img.url" data-lightbox="roadtrip">
+                    <img class="img-fluid" [src]="img.url" [alt]="img.alt" >
+                </a>
+            </div>
+           
+        </div>
+    </div>
+</div>
